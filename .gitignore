@@ -1,0 +1,62 @@
+.env
+backend/.env
+__pycache__
+
+# ----- OS Files -----
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ----- Python -----
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+venv/
+env/
+.venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ----- Node / JavaScript -----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment Files
+.env
+*.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ----- Logs -----
+logs/
+*.log
+*.out
+
+# ----- IDE / Editor -----
+# VS Code
+.vscode/
+.history/
+
+# JetBrains (PyCharm / WebStorm)
+.idea/
+
+# ----- Project Misc -----
+*.s*
