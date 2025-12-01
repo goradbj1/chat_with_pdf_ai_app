@@ -2,7 +2,7 @@ from datetime import datetime
 from fastapi import FastAPI
 from scripts.vector_store import load_index, search
 from scripts.groq_client import groq_llm
-from scripts.db import conversations
+# from scripts.db import conversations
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
@@ -37,9 +37,9 @@ async def ask(payload: dict):
 
     answer = groq_llm(prompt)
 
-    conversations.insert_one({"query": query, "answer": answer, "date_time": datetime.now()})
+    # conversations.insert_one({"query": query, "answer": answer, "date_time": datetime.now()})
     return {"response": answer}
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port = 8000)
+    uvicorn.run(app, host="0.0.0.0", port = 8000)
